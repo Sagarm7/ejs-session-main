@@ -1,0 +1,17 @@
+<%- include("partials/nav") %> 
+    <div class="home">
+      <div class="movies">
+        <% movies.forEach(movie => { %>
+        <div class="movie">
+          <img src="<%= movie.url %>" alt="" />
+          <div class="body">
+            <a href="#"><%= movie.title %> </a>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+    <script src="/js/common.js"></script>
+    <script src="/js/home.js"></script>
+  </body>
+</html>
